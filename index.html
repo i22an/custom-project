@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CSS File -->
+    <link type="text/css" rel="stylesheet" href="styles.css" 
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <nav>
+    <div class="nav-wrapper teal lighten-2">
+        <a href="#" class="brand-logo">SAVE</a>
+        <ul id="nav-mobile" class="right hide-on  -med-and-down">
+        <li><a href="#home-section">Home </a></li>
+        <li><a href="#pages-section">By Pages</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="home-section" class="center-align teal lighten-5 flow-text">
+    <h1>I'M BROKE</h1>
+    <p class="flow-text title-caption">This is a simple web app that helps you gauge how long it will take for you to save the amount you want</p>
+</div>
+<div id="pages-section" class="calculator-section center-align container">
+    <h1>By Days</h1>
+    <p class="flow-text title-caption">Find out how many days it will take to save the amount you want</p>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12 pages-text">
+                    <input id="goals-input" class="validate" type="number"></input>
+                    <label for="goals-input" class="active">Amount You want to save</label>
+                    <span class="helper-text">Enter the amount you want to save</span>
+                </div>
+                <div class="input-field col s12 pages-text">
+                  <input id="days-input" class="validate" type="number"></input>
+                  <label for="days-input" class="active">Number of days</label>
+                  <span class="helper-text">Enter the number OF SAYS YOU WANT TO SAVE</span>
+                </div>
+                <button onclick="onSubmit()" class="btn waves-effect waves-light btn-large calculate-btn pages-text" type="submit" name="action">Submit
+                    <i class="material-icons right"></i>
+                </button>
+                <br>
+                <div class="row center-align pages-text2">
+                    <div class="card-panel teal lighten-5">
+                        <span id="pages-output">Your results will display here after you click the 'Calculate' button.</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<hr>
+<div>
+    
+</div>
+
+<footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About App</h5>
+              <p class="grey-text text-lighten-4">This is a coding project that was done during a Code Hero session to gauge how long it will take for one to khatam the Quran.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">My Other Apps</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://mdizzan.github.io/Calculator/" target="_blank">Basic Calculator</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://mdizzan.github.io/Grade-Calculator/average.html" target="_blank">Grade Calculator</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">SG Bill Calculator</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Zakat Calculator</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Quiz App</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+                &copy; 2019 Code Hero Project by Muhammad Izzan
+          <a class="grey-text text-lighten-4 right" href="https://github.com/mdIzzan?tab=repositories" target="_blank" >My Github</a>
+          </div>
+        </div>
+      </footer>
+  <body>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Main JS File -->
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
